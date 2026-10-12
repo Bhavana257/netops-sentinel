@@ -1,0 +1,10 @@
+groups:
+  - name: lab
+    rules:
+      - alert: SimulatedServiceDown
+        expr: lab_service_up == 0
+        for: 10s
+        labels:
+          severity: warning
+        annotations:
+          summary: "Training incident: simulated service unavailable"
