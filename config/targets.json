@@ -1,0 +1,16 @@
+{
+  "warning_latency_ms": 200,
+  "targets": [
+    {
+      "hostname": "google.com",
+      "checks": ["DNS", "TCP"],
+      "tcp_port": 443,
+      "timeout_seconds": 3
+    },
+    {
+      "hostname": "localhost",
+      "checks": ["DNS"],
+      "timeout_seconds": 3
+    }
+  ]
+}

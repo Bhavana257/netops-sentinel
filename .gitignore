@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+logs/*.jsonl
+reports/*.jsonl
+.pytest_cache/
